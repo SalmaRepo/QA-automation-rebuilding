@@ -17,7 +17,7 @@ CONSTRAINTS:
 
 import {test,expect,Locator} from '@playwright/test'
 
-test.only("playwright locators practice 1",async ({page})=>{
+test("playwright locators practice 1",async ({page})=>{
 
 await page.goto("https://qa-practice-html-pages.vercel.app/playwright_locators.html");
 
@@ -41,7 +41,6 @@ const name:string='John F'
 
 const nameForm=page.getByLabel('Full Name');
 await visibleAssert(nameForm);
-console.log("Called assert function")
 await nameForm.fill(name);
 const emailForm=page.getByLabel('Email Address');
 await emailForm.fill("johnF@gmail.com");
