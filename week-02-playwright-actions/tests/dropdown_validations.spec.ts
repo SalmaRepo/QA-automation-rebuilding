@@ -55,4 +55,43 @@ test.describe("Handling dropdowns", () => {
       console.log(option);
     }
   });
+
+  //Multi Select Dropdown
+  test("Multi Select Dropdown", async ({ page }) => {
+    const colorsSelect = page.locator("#colors");
+    //colors select should be visible
+    await expect(colorsSelect).toBeVisible();
+
+    //default value should be blue
+    await expect(colorsSelect).toHaveValue("blue");
+
+    //select Multiple options red, green, yellow
+    await colorsSelect.selectOption([
+      { label: "Red" },
+      { label: "Green" },
+      { label: "Yellow" },
+    ]);
+
+    await colorsSelect.selectOption([
+      { value: "red" },
+      { value: "green" },
+      { value: "yellow" },
+    ]);
+    await colorsSelect.selectOption([{ index: 0 }, { index: 2 }, { index: 3 }]);
+  });
+
+  test("sorted options in dropdown", async ({ page }) => {
+    const dropdownOptions = await page
+      .locator("#sorted option")
+      .allTextContents();
+
+    //const dropdownOptions=await page.locator('#colors option').allTextContents()
+    const originalList = dropdownOptions;
+    const sortedList = [...dropdownOptions].sort();
+
+    console.log("original list", originalList);
+    console.log("sorted list", sortedList);
+
+    expect(originalList).toEqual(sortedList);
+  });
 });
