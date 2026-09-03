@@ -15,18 +15,18 @@ Everything here is built and committed as I learn — daily notes, small practic
 | Phase | Topic | Status | Folder |
 |---|---|---|---|
 | Weeks 1–2 | JavaScript reactivation (ES6+, async/await, classes, modules) | ✅ Complete | `day-01-js-fundamentals/` |
-| Week 1 (Playwright) | Playwright + TypeScript fundamentals | 🔄 In progress | `week-01-playwright-fundamentals/` |
-| Week 2 (Playwright) | Page Object Model | ⏳ Upcoming | — |
+| Week 1 (Playwright) | TypeScript fundamentals + Playwright kickstart, locators, filtering locators, CSS/XPath locators | ✅ Complete | `week-01-playwright-fundamentals/` |
+| Week 2 (Playwright) | Actions (input/radio), checkboxes & form validations, dropdowns (single-select, multi-select, sorted, Bootstrap-style, auto-suggest) | ✅ Complete | `week2_playwright_Actions/` |
+| Week 3 (Playwright) | Web tables (static, dynamic & pagination) | 🔄 In progress | — |
+| — | Date pickers, dialogs, browser context/fixtures, multiple tabs, mouse/keyboard, scrolling, Shadow DOM, frames | ⏳ Upcoming | — |
+| — | Assertions/autowaiting, storage, parameterization, hooks/tagging, reporting | ⏳ Upcoming | — |
+| — | Page Object Model | ⏳ Upcoming | — |
+| — | Playwright MCP & AI Agents (mini projects) | ⏳ Upcoming | — |
 | — | API testing (Postman + Playwright APIRequestContext) | ⏳ Upcoming | — |
-| — | AI-augmented testing (LLM-assisted test generation) | ⏳ Upcoming | — |
 | — | CI/CD with GitHub Actions | ⏳ Upcoming | — |
-
-## Structure
-
-- `day-XX-*` — daily JS fundamentals practice (Weeks 1–2)
-- `week-XX-*` — daily/weekly Playwright learning, notes, and exercises
-- Portfolio projects will live in separate dedicated repos, linked here once ready
 
 ## Notes
 
 This is a working, learning-in-public repo — expect commits that reflect real progress, including mistakes and iteration, not a polished final product.
+
+Portfolio-ready projects will be added here soon as learning progresses.
