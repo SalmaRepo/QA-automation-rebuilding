@@ -61,6 +61,7 @@ test("validate product table", async ({ page }) => {
   console.log(outOfStock);
   expect(outOfStock).toEqual(["Keyboard"]);
 
+  
   const inStock = [];
   //Print products where Status = "In Stock" → Expected: Laptop, Mouse, Monitor
   console.log("product name with stock status In Stock are");
