@@ -97,7 +97,7 @@ test("book dummy flight ticket", async ({ page }) => {
   // Enter Travel Details
 
   await page.locator("#traveltype_2").click();
-  
+
   await page.locator("#fromcity").fill("Hyderabad");
   await expect(page.locator("#fromcity")).toHaveValue("Hyderabad");
   await page.locator("#tocity").fill("London");
@@ -169,8 +169,9 @@ test("book dummy flight ticket", async ({ page }) => {
   );
   await expect(page.getByRole("button", { name: "Place Order" })).toBeEnabled();
   await page.getByRole("button", { name: "Place Order" }).click();
-  //await page.waitForTimeout(5000);
-  await expect(page.locator(".merchant-name").first()).toBeVisible({ timeout: 10000 })
+  await expect(page.locator(".merchant-name").first()).toBeVisible({
+    timeout: 10000,
+  });
   await expect(page.locator(".merchant-name").first()).toHaveText(
     "SEAMANTOURS",
   );
