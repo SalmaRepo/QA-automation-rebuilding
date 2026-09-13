@@ -94,7 +94,7 @@ test("Booking.com Date Picker", async ({ page }) => {
   const checkinDate = { month: "September", date: "15", year: "2026" };
   await selectDate(page, checkinDate.date, checkinDate.month, checkinDate.year);
   await expect(page.getByTestId("date-display-field-start")).toContainText(
-    /Sep 15/i,
+    `${checkinDate.month.substring(0,3)} ${checkinDate.date}`
   );
 
   const checkOutDate = { month: "October", date: "15", year: "2026" };
@@ -105,6 +105,6 @@ test("Booking.com Date Picker", async ({ page }) => {
     checkOutDate.year,
   );
   await expect(page.getByTestId("date-display-field-end")).toContainText(
-    /Oct 15/i,
+    `${checkOutDate.month.substring(0,3)} ${checkOutDate.date}`
   );
 });
