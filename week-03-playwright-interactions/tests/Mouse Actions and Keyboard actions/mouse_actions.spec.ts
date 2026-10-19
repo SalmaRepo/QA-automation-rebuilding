@@ -78,12 +78,12 @@ test("copy text button transfers text from field1 to field2", async ({
 test("Drag and drop the draggable element in to the drop zone", async ({
   page,
 }) => {
-  let sourceItem = page.getByText("Drag me", { exact: true });
+  let sourceItem = page.getByText("Drag me");
   page.once("dialog", (dialog) => {
     expect(dialog.message()).toContain("Dropped");
     dialog.accept();
   });
-  let targetItem = page.getByText("Drop Zone", { exact: true });
+  let targetItem = page.getByText("Drop Zone");
   await sourceItem.dragTo(targetItem);
 });
 
