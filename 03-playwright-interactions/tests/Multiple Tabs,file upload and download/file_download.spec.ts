@@ -19,7 +19,7 @@ test("File Download", async ({ page }) => {
   //by default file gets downloaded to download folder, to change the download location
   //create a download folder in the project,
   //save the file in the customs path
-  const downloadPath = "./week-03-playwright-interactions/downloads/sample.txt";
+  const downloadPath = "./03-playwright-interactions/downloads/sample.txt";
   //const downloadPath="downloads/`${download.suggestedFilename()}`"-->for dynamic file name
   await download.saveAs(downloadPath);
   //verify if downloaded file exists in the folder

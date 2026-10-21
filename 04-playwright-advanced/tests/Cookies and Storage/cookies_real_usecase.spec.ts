@@ -21,7 +21,7 @@ import { test, expect } from "@playwright/test";
 import fs from "fs";
 import path from "path";
 const cookieFile =
-  "./week-04-playwright-advanced/storage-data/cookies.data.json";
+  "./04-playwright-advanced/storage-data/cookies.data.json";
 const url = "https://sdetqa.vercel.app/login_app";
 
 test.describe.configure({ mode: "serial" }); //parallel is the default mode but if we want serially , we need to mention
