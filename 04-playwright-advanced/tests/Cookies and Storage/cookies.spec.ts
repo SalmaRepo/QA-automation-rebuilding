@@ -58,6 +58,9 @@ test("cookies", async () => {
   let cookies=await context.cookies();
   console.log("Cookies===>,",cookies);
 
+  //count
+  console.log((await context.cookies()).length);
+
   //clear all the cookies
   await context.clearCookies();
   cookies=await context.cookies();
