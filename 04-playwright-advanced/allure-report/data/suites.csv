@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5392","@P2 @Regression demowebshop search test","chromium","2026-10-26","passed","2026-10-26","demowebshop User Login Tests","Reporters and Allure reports\reporters.spec.ts","",""
+"","4567","@P1 @Sanity Login test with invalid credentials","chromium","2026-10-26","passed","2026-10-26","demowebshop User Login Tests","Reporters and Allure reports\reporters.spec.ts","",""
+"","9764","@P1 @Sanity Login test with valid credentials","chromium","2026-10-26","failed","2026-10-26","demowebshop User Login Tests","Reporters and Allure reports\reporters.spec.ts","",""
+"","8176","@P1 @Sanity demoblaze Login test","chromium","2026-10-26","failed","2026-10-26","demowebshop User Login Tests","Reporters and Allure reports\reporters.spec.ts","",""
+"","4785","@P2 @Regression title test","chromium","2026-10-26","passed","2026-10-26","demowebshop Home page tests","Reporters and Allure reports\reporters.spec.ts","",""
+"","5125","@P2 Regression logotest","chromium","2026-10-26","passed","2026-10-26","demowebshop Home page tests","Reporters and Allure reports\reporters.spec.ts","",""
