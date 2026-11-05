@@ -21,9 +21,10 @@ Started with TypeScript fundamentals, then moved through Playwright topic by top
 | `01-playwright-fundamentals` | Setup and locators | Done |
 | `02-playwright-actions` | Form elements, tables, date pickers, dialogs | Done |
 | `03-playwright-interactions` | Browser contexts, tabs, files, mouse and keyboard, frames | Done |
-| `04-playwright-advanced` | Assertions, storage, data-driven testing, reporting, Page Object Model | In progress |
-| `05-api-testing` | API testing with Playwright | Planned |
-| `06-mcp-and-ai` | Playwright MCP, agents, AI-assisted testing | Planned |
+| `04-playwright-advanced` | Assertions, storage, data-driven testing, reporting, Page Object Model | Done |
+| `05-api-testing` | API testing with Playwright | Done |
+| `06-mcp-and-ai` | Playwright MCP, agents, AI-assisted testing | Done |
+| `07-projects` | Build Projects | In progress |
 
 ## What each folder covers
 
